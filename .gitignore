@@ -1,0 +1,8 @@
+.classpath
+.project
+.settings/*
+target/*
+Test-output
+/target/
+pom.xml.releaseBackup
+release.properties
