@@ -3,13 +3,38 @@
   <groupId>AppiumLearning</groupId>
   <artifactId>AppiumLearning</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <dependencies>
-  <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
-<dependency>
-    <groupId>io.appium</groupId>
-    <artifactId>java-client</artifactId>
-    <version>7.4.1</version>
-</dependency>
-  
-  </dependencies>
+ <dependencies>
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>7.4.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.3.0</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/test/Resources</directory>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
