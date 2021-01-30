@@ -254,7 +254,6 @@ public class CommonWrappers {
 		} catch (Exception e) {
 			return false;
 		}
-
 	}
 
 	public boolean verifyText(WebElement ele, String Expected) {

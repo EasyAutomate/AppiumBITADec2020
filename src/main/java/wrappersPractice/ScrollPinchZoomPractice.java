@@ -8,7 +8,7 @@ public class ScrollPinchZoomPractice extends GenericWrappers {
 
 	@Test
 	public void runTC() {
-		launchAndroidApp("My samsung", "com.the511plus.MultiTouchTester",
+		launchAndroidApp("My emulator", "com.the511plus.MultiTouchTester",
 				"com.the511plus.MultiTouchTester.MultiTouchTester", "", "");
 		scrollFromDownToUpinAppUsingPointerInput();
 		scrollFromDownToUpinAppUsingTouchActions();
@@ -22,6 +22,7 @@ public class ScrollPinchZoomPractice extends GenericWrappers {
 		pinchUsingTouchActions();
 		zoomUsingTouchActions();
 		ZoomUsingPointerInput();
+		closeApp();
 	}
 
 }
